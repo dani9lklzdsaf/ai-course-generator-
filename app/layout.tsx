@@ -2,7 +2,12 @@ import type { Metadata } from "next";
 import { Quicksand } from "next/font/google";
 import "./globals.css";
 
-const AppFont = Quicksand({ subsets: ["latin"] });
+import { ClerkProvider } from "@clerk/nextjs";
+import Provider from "./provider";
+
+const AppFont = Quicksand({
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
   title: "AI Video Generator App",
@@ -15,10 +20,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={AppFont.className}>
-        {children}
-      </body>
-    </html>
+    <ClerkProvider>
+      <html lang="en">
+        <body className={AppFont.className}>
+          <Provider>
+            {children}
+          </Provider>
+        </body>
+      </html>
+    </ClerkProvider>
   );
 }
