@@ -1,7 +1,8 @@
 ## 🏛️ 1. Identificação da Equipe
 
 - **Nome da Equipe:Course IA Gnerator**
-- **Nome dos Integrantes e Períodos:Daniel Reis - 5° período Eng Software;
+- **Nome dos Integrantes e Períodos:
+- Daniel Reis - 5° período Eng Software;
 - Diego Fonseca - 5° período Eng Software;
 - Yury Mendonça - 5° período Eng Software;
 - **Link do Repositório (GitHub/GitLab):**
